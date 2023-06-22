@@ -1,0 +1,63 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened class="side-left">
+    <div class="side-content">
+      <div class="up">
+        <div class="logoITR">
+          <img src="../../../assets/images/Logotipo_ITR_color_WEB.png" alt="logoITR">
+        </div>
+        <mat-divider></mat-divider>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <mat-icon aria-hidden="false" aria-label="Example user icon" fontIcon="people"></mat-icon>
+            {{ selected }}
+          </button>
+          <ul class="dropdown-menu dropdown-menu-start">
+            <li (click)="changeSelected('Entrevistador')"><a class="dropdown-item">Entrevistador</a></li>
+            <li (click)="changeSelected('Asignador')"><a class="dropdown-item">Asignador</a></li>
+            <li (click)="changeSelected('Coach')"><a class="dropdown-item">Coach</a></li>
+            <li (click)="changeSelected('RRHH')"><a class="dropdown-item">RRHH</a></li>
+            <li (click)="changeSelected('Recursos')"><a class="dropdown-item">Recursos</a></li>
+          </ul>
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Empleados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Objetivos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Algo mas</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="user">
+        <mat-divider></mat-divider>
+        <div class="user-info">
+          <img src="../../../assets/images/pizza3d.png" alt="">
+          <p>{{ userName }}</p>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="sort"></mat-icon>
+        </div>
+      </div>
+    </div>
+
+  </mat-drawer>
+
+
+  <mat-drawer-content class="content">
+
+    <h1>prueba</h1>
+    <p>leihdfskdjfskdjfskdfjskdjf</p>
+
+    <router-outlet></router-outlet>
+
+
+  </mat-drawer-content>
+
+
+</mat-drawer-container>
+
+
+
+
