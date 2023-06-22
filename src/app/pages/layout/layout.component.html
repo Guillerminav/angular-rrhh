@@ -12,9 +12,9 @@
             {{ selected }}
           </button>
           <ul class="dropdown-menu dropdown-menu-start">
-            <li (click)="changeSelected('Entrevistador')"><a class="dropdown-item">Entrevistador</a></li>
-            <li (click)="changeSelected('Asignador')"><a class="dropdown-item">Asignador</a></li>
-            <li (click)="changeSelected('Coach')"><a class="dropdown-item">Coach</a></li>
+            <li (click)="changeSelected('Entrevistador')"><a class="dropdown-item" routerLink="entrevistador">Entrevistador</a></li>
+            <li (click)="changeSelected('Asignador')"><a class="dropdown-item" routerLink="./asignador">Asignador</a></li>
+            <li (click)="changeSelected('Coach')"><a class="dropdown-item" routerLink="./coach">Coach</a></li>
             <li (click)="changeSelected('RRHH')"><a class="dropdown-item">RRHH</a></li>
             <li (click)="changeSelected('Recursos')"><a class="dropdown-item">Recursos</a></li>
           </ul>
@@ -37,7 +37,7 @@
         <div class="user-info">
           <img src="../../../assets/images/pizza3d.png" alt="">
           <p>{{ userName }}</p>
-          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="sort"></mat-icon>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="more_vert"></mat-icon>
         </div>
       </div>
     </div>
@@ -47,9 +47,7 @@
 
   <mat-drawer-content class="content">
 
-    <h1>prueba</h1>
-    <p>leihdfskdjfskdjfskdfjskdjf</p>
-
+    <!-- rutas hijas -->
     <router-outlet></router-outlet>
 
 
