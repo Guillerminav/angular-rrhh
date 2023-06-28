@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    width: 26rem;
+    height: 20rem;
+    border-radius: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 16rem;
+}
+
+.redireccion {
+    text-align: center;
+    padding: .6rem 0 0 0;
+    text-decoration: none;
+    color: rgb(107, 10, 197);
+    font-size: .95rem;
+}

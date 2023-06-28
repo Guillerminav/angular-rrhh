@@ -5,6 +5,7 @@ import { CoachComponent } from './coach/coach.component';
 import { MaterialModule } from '../material/material.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { EntrevistadorComponent } from './entrevistador/entrevistador.component';
+import { AsignadorComponent } from './asignador/asignador.component';
 
 
 
@@ -14,6 +15,7 @@ import { EntrevistadorComponent } from './entrevistador/entrevistador.component'
   declarations: [
     LayoutComponent,
     CoachComponent,
+    AsignadorComponent,
     EntrevistadorComponent,
 
   ],

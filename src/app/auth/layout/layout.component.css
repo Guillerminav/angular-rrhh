@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+    background: rgb(112,0,163);
+    background: linear-gradient(0deg, rgba(112,0,163,1) 0%, rgba(143,0,245,1) 100%);
+}
+
+.routes {
+    min-width: 50%;
+}
+
+.img {
+    min-width: 50%;
+    min-height: 100vh;
+}
+
+.img img {
+    width: 100%;
+    min-height: 100vh;
+}

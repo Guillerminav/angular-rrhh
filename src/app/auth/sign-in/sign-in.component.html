@@ -1,1 +1,30 @@
-<p>sign-in works!</p>
+<!-- SIGN IN / INICIAR SESION -->
+<div class="container">
+
+    <form>
+
+        <!-- EMAIL -->
+        <mat-form-field appearance="outline">
+            <mat-label>Ingrese su email</mat-label>
+            <input matInput placeholder="Email" [formControl]="email" required type="email" name="email">
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <!-- CONTRASEÑA -->
+        <mat-form-field appearance="outline">
+            <mat-label>Ingrese su contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" type="password" name="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <!-- SUBMIT -->
+        <button mat-raised-button color="primary" type="submit">INGRESAR</button>
+
+        <!-- redireccion a signup -->
+        <a routerLink="signup" class="redireccion">Aún no tengo cuenta</a>
+
+    </form>
+
+</div>

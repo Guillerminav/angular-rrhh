@@ -21,7 +21,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatDividerModule} from '@angular/material/divider';
-
+import {FormControl, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NgIf} from '@angular/common';
 
 
 
@@ -50,7 +51,13 @@ import {MatDividerModule} from '@angular/material/divider';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
-    MatDividerModule
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    
+
   ]
 })
 export class MaterialModule { }

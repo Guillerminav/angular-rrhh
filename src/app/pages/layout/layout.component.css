@@ -8,6 +8,7 @@
 
 .side-left {
   width: 18%;
+  min-width: 18%;
   min-height: 100vh;
   display: flex;
   align-items: center;
